@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>aSlider Demo Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="slider">
+        <div><img src="https://dummyimage.com/200x250/000/fff.png?text=Slide+1" alt=""></div>
+        <div><img src="https://dummyimage.com/250x200/000/fff.png?text=Slide+2" alt=""></div>
+        <div><img src="https://dummyimage.com/200x200/000/fff.png?text=Slide+3" alt=""></div> 
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src="a-slider.js"></script>
+    <script>
+        $(function(){
+            $('#slider').aSlider({
+                width:'500',
+                gap:10,
+                verticalAlign:'center'
+            });
+        })
+    </script>
+</body>
+</html>
