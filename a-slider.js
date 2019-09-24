@@ -16,8 +16,8 @@ try {
         this.aPrev = $(`<button class="a-prev">prev</button>`);
         this.aNext = $(`<button class="a-next">next</button>`);
         this.aViewport = $(`<div class=a-viewport></div>`);
-        this.html(this.aViewport);
         this.aViewport.append(this.aTrack);
+        this.html(this.aViewport);
         this.prepend(this.aPrev);
         this.append(this.aNext);
         //layout css
@@ -52,6 +52,14 @@ try {
           margin: `0 ${this.options.gap / 2}px`,
           fontSize: 0
         });
+        //slide func
+        this.slide = () => {
+          console.log(this)
+        }
+        //buttons
+        this.aNext.click(() => { 
+          this.slideFnc();
+        })
       };
     });
   })(jQuery);
