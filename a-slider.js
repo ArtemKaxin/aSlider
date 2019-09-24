@@ -53,13 +53,7 @@ try {
           fontSize: 0
         });
         //slide func
-        this.slide = () => {
-          console.log(this)
-        }
         //buttons
-        this.aNext.click(() => { 
-          this.slideFnc();
-        })
       };
     });
   })(jQuery);
